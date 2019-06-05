@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+
+<head>
+    <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- <h1>Hello World!</h1> -->
+    <h1 class="display-1">Account</h1>
+    <!-- Material input -->
+    <div class="md-form">
+        <i class="fas fa-user prefix"></i>
+        <input type="text" id="userInfo" class="form-control" oninput="setuserInfo(this)">
+        <label for="inputIconEx2">User:</label>
+    </div>
+    
+    <script src="promises.js"></script>
+    <button onclick="btnLoginGet()" class="btn btn-secondary btn-lg">Login</button>
+    <button class="btn btn-secondary btn-lg" onclick="bRegi()">Register</button>
+    <button class="btn btn-secondary btn-lg" onclick="btnDelete()">Delete</button>
+    
+</body>
+
 </html>
